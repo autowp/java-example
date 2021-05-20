@@ -1,0 +1,8 @@
+deployment:
+  namespace: ""
+  image: ""
+  version: ""
+  finalName: ""
+  openapihost: ""
+  secretNameOpenApi: ""
+  AdactaUrl: ""
