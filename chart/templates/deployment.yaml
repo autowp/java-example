@@ -25,8 +25,13 @@ spec:
             - name: http
               containerPort: 8080
           env:
-            - name: ADACTA_URL
-              value: {{ .Values.deployment.AdactaUrl | quote }}
+            - name: SPRING_DATASOURCE_URL
+              value: {{ .Values.deployment.postgresqlHost | quote }}
+            - name: SPRING_DATASOURCE_USERNAME
+              value: {{ .Values.deployment.postgresqlUser | quote }}
+            - name: SPRING_DATASOURCE_PASSWORD
+              value: {{ .Values.deployment.postgresqlPassword | quote }}
+
 
 ---
 apiVersion: v1
