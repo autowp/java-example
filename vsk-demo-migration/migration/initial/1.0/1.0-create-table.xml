@@ -6,7 +6,7 @@
 http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
 
-    <changeSet id="1" author="pobolin">
+    <changeSet id="1" author="vsk">
         <sqlFile relativeToChangelogFile="true" path="1.0-create-table.sql"/>
         <rollback>
             <sqlFile relativeToChangelogFile="true" path="1.0-create-table-rollback.sql"/>
