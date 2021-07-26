@@ -77,30 +77,6 @@
                     </execution>
                 </executions>
             </plugin>
-            <plugin>
-                <groupId>com.spotify</groupId>
-                <artifactId>dockerfile-maven-plugin</artifactId>
-                <version>${dockerfile.maven.plugin.version}</version>
-                <configuration>
-                    <useMavenSettingsForAuth>true</useMavenSettingsForAuth>
-                    <skip>${docker.skip}</skip>
-                    <repository>${dockerRegistry}/${ppod.project.name}</repository>
-                    <tag>${ppod.project.version}</tag>
-                    <dockerfile>Dockerfile</dockerfile>
-                    <buildArgs>
-                        <JAR_ARTIFACT>${project.build.finalName}</JAR_ARTIFACT>
-                    </buildArgs>
-                </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>build</goal>
-                            <goal>push</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-
         </plugins>
     </build>
 

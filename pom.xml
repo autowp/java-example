@@ -22,9 +22,6 @@
 
     <properties>
         <java.version>11</java.version>
-        <docker.skip>false</docker.skip>
-        <dockerfile.maven.plugin.version>1.4.13</dockerfile.maven.plugin.version>
-        <dockerRegistry>cxlab</dockerRegistry>
         <ppod.project.name>demo_backend</ppod.project.name>
         <ppod.project.version>${project.version}</ppod.project.version>
     </properties>
